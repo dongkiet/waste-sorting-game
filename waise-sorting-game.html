@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waste Sorting</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Waste Sorting Game</h1>
+    <p>Kéo thả các vật dụng vào thùng rác phù hợp!</p>
+  </header>
+  <main>
+    <!-- Các thùng rác -->
+    <div id="bins">
+      <div id="recycle-bin" class="bin">
+        <img src="images/recycle-bin.png" alt="Thùng rác tái chế" />
+        <p>Rác tái chế</p>
+      </div>
+      <div id="organic-bin" class="bin">
+        <img src="images/organic-bin.png" alt="Thùng rác hữu cơ" />
+        <p>Rác hữu cơ</p>
+      </div>
+      <div id="other-bin" class="bin">
+        <img src="images/other-bin.png" alt="Thùng rác vô cơ" />
+        <p>Rác vô cơ</p>
+      </div>
+    </div>
+
+    <!-- Các đồ vật -->
+    <div id="items">
+      <img id="banana-peel" src="images/banana-peel.png" draggable="true" alt="Vỏ chuối">
+      <img id="cans" src="images/cans.png" draggable="true" alt="Lon nước">
+      <img id="glass-bottle" src="images/glass-bottle.png" draggable="true" alt="Chai thủy tinh">
+      <img id="paper" src="images/paper.png" draggable="true" alt="Giấy">
+      <img id="plastic-bag" src="images/plastic-bag.png" draggable="true" alt="Túi ni lông">
+      <img id="plastic-bottle" src="images/plastic-bottle.png" draggable="true" alt="Chai nhựa">
+    </div>
+
+    <button id="restart-btn">Chơi lại</button>
+    <div id="score">
+      Điểm: <span id="score-value">0</span>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
